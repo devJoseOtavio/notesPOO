@@ -7,12 +7,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class CreateNotes {
+public class CrudNotes {
 
     private static Connection conn;
 
     private static Scanner scan = new Scanner(System.in);
-
+//hashmap como banco de dados em memoria
     public static void main(String[] args) throws SQLException {
         System.out.println(
                 "Digite o numero de operação que deseja realizar: " +

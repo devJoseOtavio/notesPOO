@@ -1,13 +1,17 @@
 package domain;
 
-import javax.annotation.processing.Generated;
 import java.util.Date;
+import java.util.HashMap;
 
 public class Notes {
 
-    Long id;
+    private HashMap<String, String> noteAndTheme = new HashMap<String, String>();
 
-    String name;
+    public void createNoteAndTheme(String note, String theme) {
+        noteAndTheme.put(note, theme);
+    }
 
-    Date date;
+    public HashMap<String, String> getNoteAndTheme() {
+        return noteAndTheme;
+    }
 }
